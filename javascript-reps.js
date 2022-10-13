@@ -26,14 +26,22 @@ const plantee = ["Plantee", "plant",  5000 , "Mordor"]
 const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
 const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 //1)
-plantee[2]=50001
-//console.log(plantee[2])
+    plantee[2]=50001
+    //console.log(plantee[2])
 //2)
-wolfy[3]= "Gotham City"
-//console.log(wolfy[3])
+    wolfy[3]= "Gotham City"
+    //console.log(wolfy[3])
 //3)
-dart.push("Hawkins")
-console.log(dart)
+    dart.push("Hawkins")
+    //console.log(dart)
 //4)
-wolfy.splice(0,1,"Gameboy")
-//console.log(wolfy)
+    wolfy.splice(0,1,"Gameboy")
+    //console.log(wolfy)
+
+ //===Yell at Ninja turtles
+
+ const ninjas = ["donatello","leonardo","raphael","michaelangelo"]
+    for(i=0;i<ninjas.length;i++) {
+        ninjas[i] = ninjas[i].toUpperCase()
+    }
+    console.log(ninjas)
