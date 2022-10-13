@@ -122,6 +122,13 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
         //console.log(whereIsWaldo[2][1][1])
 
 
+//=====Excited Kitten
 
-
-//=====Excited Kitten(1,1)
+const kittyTalk= ["...human...why you taking pictures of me?...","...the catnip made me do it...","...why does the red dot always get away..."]
+for(i=1;i<=20;i++) {
+    if(i%2===0) {
+        let meow = Math.round(Math.random()*3) 
+        console.log(kittyTalk[meow])
+    } else 
+    console.log("Love me, pet me! HSSSSSSS!")
+}
