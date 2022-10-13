@@ -55,7 +55,7 @@ const ninjas = ["donatello","leonardo","raphael","michaelangelo"]
  const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
  //console.log(favMovies.indexOf('Titanic'))
  //1)
-    favMovies.sort()
+    //favMovies.sort()
     //sorted alphabetically and mutated the array and returned it
 
 //2)
@@ -97,9 +97,9 @@ const ninjas = ["donatello","leonardo","raphael","michaelangelo"]
     //console.log(halfArray)
 
 //11)
-    //console.log(favMovies)
+    console.log(favMovies)
     console.log(favMovies.indexOf('Fast and Furious'))
-    //get a value of -1 idk y
+    //get a value of -1 meaning the element is not in the array doesn't exist in the array
 
 //12) const creates constant reference to array
 //does not define constant array 
@@ -141,13 +141,20 @@ const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,
 //=> 15
 let median
 let temp
-
-temp=nums.length/2
-if(temp%2 !==0) {
-    temp=Math.floor(temp)
+nums.sort()
+temp=nums.length
+//go into the if statement if temp is odd 
+//this makes temp an int and one of the indexes to be used for median
+if(temp%2 !== 0) {
+    temp=Math.floor(temp/2)
+}else {
+    temp = temp/2
 }
 
-if(nums.length %2 !==0 ) {
+//we need to check if the length is even or odd
+//if it's odd we just use nums[temp]
+//if it's even we need to use (nums[temp]+ nums[temp+1])/2
+if(nums.length %2  === 0 ) {
     median= ((nums[temp] + (nums[temp +1]))/2)
 }else {
     median = nums[temp]
