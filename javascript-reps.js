@@ -128,7 +128,33 @@ const kittyTalk= ["...human...why you taking pictures of me?...","...the catnip 
 for(i=1;i<=20;i++) {
     if(i%2===0) {
         let meow = Math.round(Math.random()*3) 
-        console.log(kittyTalk[meow])
-    } else 
-    console.log("Love me, pet me! HSSSSSSS!")
+        //console.log(kittyTalk[meow])
+    } else  {
+    //console.log("Love me, pet me! HSSSSSSS!")
+    }
 }
+
+//=====Find the Median==========
+
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+//Expected output:
+//=> 15
+let median
+let temp
+
+temp=nums.length/2
+if(temp%2 !==0) {
+    temp=Math.floor(temp)
+}
+
+if(nums.length %2 !==0 ) {
+    median= ((nums[temp] + (nums[temp +1]))/2)
+}else {
+    median = nums[temp]
+}
+
+console.log(median)
+
+//easier way
+// nums.sort()
+// console.log(nums[Math.floor(nums.length/2)])
