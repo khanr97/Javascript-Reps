@@ -55,7 +55,7 @@ const ninjas = ["donatello","leonardo","raphael","michaelangelo"]
  const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
  //console.log(favMovies.indexOf('Titanic'))
  //1)
-    //console.log(favMovies.sort())
+    favMovies.sort()
     //sorted alphabetically and mutated the array and returned it
 
 //2)
@@ -81,7 +81,7 @@ const ninjas = ["donatello","leonardo","raphael","michaelangelo"]
 
 //7)
     let num = favMovies.indexOf('Django Unchained')
-    favMovies.splice(num,0,"Avatar")
+    favMovies.splice(num,1,"Avatar")
     //console.log(favMovies)
     //perm mutation (start,deletecount,what u want to add)
 
@@ -104,3 +104,24 @@ const ninjas = ["donatello","leonardo","raphael","michaelangelo"]
 //12) const creates constant reference to array
 //does not define constant array 
 //we can change elments within constant array
+
+
+//========Where is Waldo=======
+
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                     ["Lucinda", "Jacc", "Neff", "Snoop"],
+                     ["Petunia", ["Baked Goods", "Waldo"]]];
+
+    ///1) Remove Eggbert
+        whereIsWaldo.splice(1,1)
+        //console.log(whereIsWaldo)
+    //2) Change neff to no one
+         whereIsWaldo[1][2] = "No One"
+        //console.log(whereIsWaldo[1][2])
+    //3) access and console.log waldo
+        //console.log(whereIsWaldo[2][1][1])
+
+
+
+
+//=====Excited Kitten(1,1)
